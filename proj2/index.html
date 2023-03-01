@@ -495,7 +495,24 @@
     If you have implemented any extra credit extensions, explain what you did and document how they work with screenshots.
 </b>
 <p>
-    YOUR RESPONSE GOES HERE
+  I implemented the loop subdivision at boundaries. The boundary vertices are computed differently using the formula: for old vertices v, v = 1/2(v1 + v2), where
+  v1 and v2 are two neighboring vertice; for new vertices v, v = 1/2(v1 + v2), where v1 and v2 are vertices of the edge. I know there are many ways to handle edge cases.
+  I got this method from this lecture slides from Princeton. https://www.cs.princeton.edu/courses/archive/spr05/cos426/lectures/13-subdiv.pdf
+  <div align="middle">
+    <table style="width:100%">
+      <tr align="center">
+        <td>
+          <img src="images/part6_extra1.jpg" align="middle" width="400px"/>
+          <figcaption>The original mesh with bondaries</figcaption>
+        </td>
+        <td>
+          <img src="images/part6_extra2.jpg" align="middle" width="400px"/>
+          <figcaption>The mesh after loop subdivisions</figcaption>
+        </td>
+      </tr>
+      <br>
+    </table>
+  </div>
 </p>
 <br>
 
